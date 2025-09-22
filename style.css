@@ -1,73 +1,110 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: rgb(3, 3, 68);
 }
-header{
+
+ header {
     background-color: rgb(49, 9, 87);
     color: whitesmoke;
-    
+
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0px 30px;
     height: 100px;
 }
-.rightSection ul li{
+
+.rightSection ul li {
     list-style: none;
     display: inline;
-}
-ul li{
     margin: 0 10px;
-    padding: 0 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-ul li a{
-    color: rgb(124, 16, 224); 
+
+
+
+ul li a {
+    color: rgb(124, 16, 224);
 }
-ul li a:hover{
+
+ul li a:hover {
     color: cadetblue;
 }
-section{
-    margin: 40px 0px;
-    color: white;
-    
-}
-.first-sec{
-    font-size: 45px;
+
+
+.first-sec {
+    font-size: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 40px 15px;
+    color: white;
 }
-.leftfsec{
-    margin:0px;
-}
-img{
-    height: 400px;
-    margin: 30px;
+
+
+.image img{
+    margin: 50px 0;
+    width: 88%;
+    height: 390px;
     border: 2px transparent;
-    border-radius: 500px;
-    opacity: 0.9;
+    border-radius: 120px;
 }
-hr{
+
+hr {
     border: 0px;
     background-color: rgb(80, 66, 49);
     height: 1px;
+    width: 95vw;
+    margin: 14px 20px;
+}
+.text-gray{
+    color: gray;
+    font-size: 2rem;
+    margin: 40px 55px;
+}
+
+.second-sec{
+    height: 60vh;
+}
+
+.second-sec .box{
+    margin: 80px 55px;
+    height: 2px;
     width: 90vw;
-    margin: 0px 55px;
+    display: flex;
+    background-color: rgb(111, 89, 139);
 }
-h3{
-    margin-left: 55px ;
-    /* font-size: 1.5rem; */
-    color:lavenderblush;
+.second-sec .vertical{
+    height: 100px;
+    background-color: rgb(100, 69, 37);
+    width: 2px;
+    margin: 0 150px;
 }
+.vertical-title{
+    position: relative;
+    top: 99px;
+    width: 150px;
+    color: white;
+    left: -33px;
+    font-size: 1.4rem;
+}
+.vertical-desc{
+    position: relative;
+    top: 110px;
+    width: 150px;
+    color: white;
+    left: -33px;
+    font-size: 0.78rem;
 
-
-footer{
+}
+footer {
     height: 50px;
     background-color: rgb(6, 30, 66);
     color: gray;
