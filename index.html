@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="leftSection">
+                <h2>SHAFQA's Portfolio</h2>
+            </div>
+            <div class="rightSection">
+                <ul>
+                    <li><a href="/">Home</li></a>
+                    <li><a href="/">About</li></a>
+                    <li><a href="/">Projects</li></a>
+                    <li><a href="/">Contact Me</li></a>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first-sec">
+            <div class="leftfsec">
+                Hi, I am <span class="purple">Shafqa Fatma</span>
+                <div>and I am a passionate </div>
+                <span id="element"></span>
+            </div>
+            <div class="image">
+                <img src="myImage.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="second-sec">
+            <div class="work">
+                <h3>What I have done so far</h3>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="rights">
+            www.shafqaPortfolio.com | All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Web Designer.'],
+        typeSpeed: 90,
+      });
+    </script>
+</body>
+
+</html>
