@@ -1,119 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shafqa Fatma - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
 </head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
 
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="leftSection">
-                <h2>SHAFQA's Portfolio</h2>
-            </div>
-            <div class="rightSection">
-                <ul>
-                    <li><a href="/">Home</li></a>
-                    <li><a href="/">About</li></a>
-                    <li><a href="/">Projects</li></a>
-                    <li><a href="/">Contact Me</li></a>
-                </ul>
+    <nav class="fixed top-0 left-0 w-full bg-white shadow z-50 dark:bg-gray-800 dark:text-gray-100 transition-colors duration-500">
+      <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+        <h1 class="text-2xl font-bold">Shafqa Fatma</h1>
 
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="first-sec">
-            <div class="leftfsec">
-                Hi, I am <span class="purple">Shafqa Fatma</span>
-                <div>and I am a passionate </div>
-                <span id="element"></span>
-            </div>
-            <div class="image">
-                <img src="myImage.jpg" alt="">
-            </div>
-        </section>
-        <hr>
-        <section class="about">
-            <h1>About Me</h1>
-            <p>Hello! I'm Shafqa Fatma, an aspiring Software Engineer with a strong interest in Web Development and Cybersecurity. I enjoy turning ideas into reality through coding and love solving challenges that help me grow. I'm a quick learner, a team player, and always excited to explore new technologies."</p>
-        </section>
+        <ul class="hidden md:flex gap-6 font-medium">
+          <li><a href="#about" class="hover:text-green-600 dark:hover:text-green-400">About</a></li>
+          <li><a href="#education" class="hover:text-green-600 dark:hover:text-green-400">Education</a></li>
+          <li><a href="#skills" class="hover:text-green-600 dark:hover:text-green-400">Skills</a></li>
+          <li><a href="#projects" class="hover:text-green-600 dark:hover:text-green-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-green-600 dark:hover:text-green-400">Contact</a></li>
+        </ul>
+    
+        <button id="darkToggle" class="hidden md:block ml-6 px-3 py-1 rounded bg-green-600 text-white hover:bg-green-700">
+          🌙
+        </button>
+    
+        <button id="menuBtn" class="md:hidden text-2xl focus:outline-none">
+          ☰
+        </button>
+      </div>
+    
+  <div id="mobileMenu" class="hidden flex-col space-y-3 bg-white dark:bg-gray-800 px-6 py-4 md:hidden">
+    <a href="#about" class="block py-2 hover:text-green-600 dark:hover:text-green-400">About</a>
+    <a href="#education" class="block py-2 hover:text-green-600 dark:hover:text-green-400">Education</a>
+    <a href="#skills" class="block py-2 hover:text-green-600 dark:hover:text-green-400">Skills</a>
+    <a href="#projects" class="block py-2 hover:text-green-600 dark:hover:text-green-400">Projects</a>
+    <a href="#contact" class="block py-2 hover:text-green-600 dark:hover:text-green-400">Contact</a>
+    <button id="darkToggleMobile" class="mt-4 px-3 py-1 rounded bg-green-600 text-white hover:bg-green-700">
+      🌙
+    </button>
+  </div>
+    </nav>
+    
 
-        <hr>
-        <section class="second-sec">
-                <span class="text-gray">Education</span>
-            <div class="box">
-                <div class="vertical">
-                    <div class="vertical-title">
-                        [2024 - Present]
-                    </div>
-                    <div class="vertical-desc">
-                        B.Tech in Information Technology at Ajay Kumar Garg Engineering College
-                    </div>     
-                </div>
+  
+  <section id="about" class="pt-32 pb-20 text-center">
+    <img src="myImage.jpg" alt="Shafqa Fatma" class="w-32 h-32 rounded-full mx-auto shadow-lg border-4 border-green-600">
+    <h2 class="text-3xl font-bold mt-4">Shafqa Fatma</h2>
+    <p id="role" class="text-lg text-gray-600"></p>
+    <p class="max-w-xl mx-auto mt-4">I love building responsive and user-friendly websites. Skilled in HTML, CSS, Tailwind CSS, and JavaScript. Currently learning Data Structures & Algorithms and exploring C programming.</p>
+  </section>
 
-                <div class="vertical">
-                    <div class="vertical-title">
-                        [2022-24]
-                    </div>
-                    <div class="vertical-desc">
-                        <b>Senior Secondary(Class 11-12)</b>
-                        St. Xavier's High School
-                        (CBSE Board, 90%)
-                    </div>   
-                </div>
+  <section id="education" class="py-16 px-6 bg-gray-100 dark:bg-gray-800 transition-colors duration-500">
+    <h2 class="text-2xl font-bold text-center mb-12">Education</h2>
+    <div class="relative max-w-4xl mx-auto">
+      <div class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full border-l-2 border-green-600"></div>
 
-                <div class="vertical">
-                    <div class="vertical-title">
-                        [2020-22]
-                    </div>
-                    <div class="vertical-desc">
-                        <b>Secondary(Class 9-10)</b>
-                        Shibli National Girls Inter College
-                        (UP Board, 90%)
-                    </div>
-                </div>
-
-
-                <div class="vertical">
-                    <div class="vertical-title">
-                        [2010-20]
-                    </div>
-                    <div class="vertical-desc">
-                        <b>Primary(Upto Class 8)</b>
-                        Bal Vidhyalaya Madhyamik School
-                        (CBSE Board)
-                    </div>
-                </div>
-
-                
-            </div>
-        </section>
-        <hr>
-
-    </main>
-
-    <footer>
-        <div class="rights">
-            www.shafqaPortfolio.com | All Rights Reserved
+      <div class="mb-12 flex justify-start">
+        <div class="w-1/2 pr-8 text-right">
+          <h3 class="font-bold">Bal Vidhyalaya Madhyamik School</h3>
+          <p class="text-gray-600 dark:text-gray-300">Class 8</p>
         </div>
-    </footer>
+      </div>
+      <div class="mb-12 flex justify-end">
+        <div class="w-1/2 pl-8 text-left">
+          <h3 class="font-bold">Shibli National Girls Inter College</h3>
+          <p class="text-gray-600 dark:text-gray-300">Class 9 - 10</p>
+        </div>
+      </div>
+      <div class="mb-12 flex justify-start">
+        <div class="w-1/2 pr-8 text-right">
+          <h3 class="font-bold">St. Xavier's High School</h3>
+          <p class="text-gray-600 dark:text-gray-300">Class 11 - 12</p>
+        </div>
+      </div>
+      <div class="mb-12 flex justify-end">
+        <div class="w-1/2 pl-8 text-left">
+          <h3 class="font-bold">Ajay Kumar Garg Engineering College</h3>
+          <p class="text-gray-600 dark:text-gray-300">B.Tech in Information Technology</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <section id="skills" class="py-16 px-6">
+    <h2 class="text-2xl font-bold text-center mb-12">Skills</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+      <span class="px-6 py-3 bg-green-100 text-green-800 rounded-lg shadow dark:bg-green-900 dark:text-green-200">HTML</span>
+      <span class="px-6 py-3 bg-green-100 text-green-800 rounded-lg shadow dark:bg-green-900 dark:text-green-200">CSS</span>
+      <span class="px-6 py-3 bg-green-100 text-green-800 rounded-lg shadow dark:bg-green-900 dark:text-green-200">Tailwind CSS</span>
+      <span class="px-6 py-3 bg-green-100 text-green-800 rounded-lg shadow dark:bg-green-900 dark:text-green-200">JavaScript</span>
+      <span class="px-6 py-3 bg-green-100 text-green-800 rounded-lg shadow dark:bg-green-900 dark:text-green-200">C Language</span>
+      <span class="px-6 py-3 bg-green-100 text-green-800 rounded-lg shadow dark:bg-green-900 dark:text-green-200">DSA (Learning)</span>
+    </div>
+  </section>
 
-    <!-- Setup and start animation! -->
-    <script>
-      var typed = new Typed('#element', {
-        strings: ['Web Developer', 'Web Designer.'],
-        typeSpeed: 90,
-      });
-    </script>
+  <section id="projects" class="py-16 px-6 bg-gray-100 dark:bg-gray-800 transition-colors duration-500">
+    <h2 class="text-2xl font-bold text-center mb-12">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white dark:bg-gray-900 rounded-lg shadow p-6 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">A personal portfolio showcasing skills, projects, and contact information.</p>
+        <a href="http://127.0.0.1:5500/Portfolio/index2.html" target="_blank" class="text-green-600 hover:underline dark:text-green-400">View Project</a>
+      </div>
+      <div class="bg-white dark:bg-gray-900 rounded-lg shadow p-6 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-xl font-bold mb-2">Drama Recommendation Website</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">A website that recommends K-Dramas based on categories and ratings for users to explore.</p>
+        <a href="https://k-buzz.netlify.app/" target="_blank" class="text-green-600 hover:underline dark:text-green-400">View Project</a>
+      </div>
+      <div class="bg-white dark:bg-gray-900 rounded-lg shadow p-6 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-xl font-bold mb-2">Amazon Home Page Clone</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">A clone of the Amazon home page using HTML, CSS, and JS with product sections and responsive design.</p>
+        <a href="https://shafqa-amazon.netlify.app/" target="_blank" class="text-green-600 hover:underline dark:text-green-400">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 px-6 text-center">
+    <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
+    <p>Email: <a href="mailto:fatmashafqa4@gmail.com" class="text-green-600 hover:underline dark:text-green-400">fatmashafqa4@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/shaf-qa25" target="_blank"class="text-green-600 hover:underline dark:text-green-400">github.com/shaf-qa25</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/shafqa-fatma-bb0111380/" target="_blank" class="text-green-600 hover:underline dark:text-green-400">linkedin.com/in/shafqa-fatma</a></p>
+  </section>
+
+  <footer class="py-6 bg-gray-200 text-center dark:bg-gray-800 dark:text-gray-300 transition-colors duration-500">
+    <p>© 2025 Shafqa Fatma. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
-
 </html>
