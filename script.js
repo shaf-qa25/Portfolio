@@ -51,7 +51,7 @@ document.querySelectorAll("nav a").forEach(anchor => {
   });
 });
 
-// Back to Top button
+
 const topBtn = document.createElement("button");
 topBtn.innerText = "↑ Top";
 topBtn.className = "hidden fixed bottom-6 right-6 bg-green-600 text-white px-4 py-2 rounded-full shadow hover:bg-green-700";
